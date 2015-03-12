@@ -7,8 +7,15 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.colorbox.js"></script>
   <script src="datedropper.js"></script>
+   <link rel="stylesheet" href="flexislider/flexslider.css" type="text/css">
   <link rel="stylesheet" type="text/css" href="datedropper.css">
+  
+  <script src="jquery.flexslider.js"></script>
 
+   </head>
+  <body id="index">
+    <div class="flexslider">
+ <ul class="slides">
 
 
    </head>
@@ -39,6 +46,9 @@
       <p>
         Email: <input type="text" value="Insira o seu Email">
       </p>
+       telemovel: <input type="text" value="Insira o seu telemovel">
+      </p>
+      
       
         <input type="submit" value="OK"/>
       </p>
@@ -50,7 +60,17 @@
    lang:"es",
  });
   </script>
- 
+ <script type="text/javascript">
+  $(window).load(function() {
+    $('.flexslider').flexslider(
+{
+  randomize: true,
+}
+      );
+  });
+  
+  
+  </script>
     <script>
       jQuery('a').colorbox();
     </script>
