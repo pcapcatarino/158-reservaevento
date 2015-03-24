@@ -17,11 +17,7 @@
 
 
   </head>
-  <body>
-    <button name="aaaa"  id="aaaa">clica aqui</button>
-      <div class="result">
-        
-      </div>
+ 
 
     <div class="main">
     <div class="event">
@@ -79,6 +75,8 @@
 <div class="book">
   <h2>Reserve já</h2>
 <form action=""></form>
+ 
+  
 
 <input type="text" placeholder="insira o seu nome" id="name">
 <br><input type="text" placeholder="insira o seu email" id="email">
@@ -109,25 +107,8 @@
 
 </div>
   </body>
-<script>
-    $( "#aaaa" ).click(function() {
-
-    orig ="http://www.omdbapi.com/?t=war&y=&plot=short&r=json";
-
-    $.get( orig, function( data ) {
-    $( ".result" ).html( data );
-
-    });
-    });
-
-    $( "#bbbb" ).click(function() {
-      $.getJSON( "http://www.omdbapi.com/?t=war&y=&plot=short&r=json", function( data ) {
-        $//( ".resultjson" ).append('<h1>' + data["Title"] + '</h1>');
-
-    });
-    });
 
 
-</script>
+
 
 </html>
